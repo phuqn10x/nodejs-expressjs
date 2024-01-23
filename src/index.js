@@ -4,8 +4,10 @@ const morgan = require('morgan')
 const { engine } = require('express-handlebars')
 const route = require('./routes')
 const db = require('./config/db')
+const seed = require('./seed/courseSeed')
 //connect DB
 db.connect()
+seed.seedSources()
 const app = express()
 const port = 3000
 // get route
