@@ -7,15 +7,18 @@ const db = require('./config/db')
 const seed = require('./seed/courseSeed')
 //connect DB
 db.connect()
-seed.seedSources()
+// seed.seedSources()
 const app = express()
-const port = 3000
+const port = 3333
 // get route
 
 //init static file
 app.use(express.static(path.join(__dirname,'public')))
 // HTTLP logger
 app.use(morgan('combined'))
+app.use(
+    express.urlencoded(),
+)
 // Template engine
 app.engine('hbs', engine({extname:"hbs"}));
 app.set('view engine', 'hbs');
