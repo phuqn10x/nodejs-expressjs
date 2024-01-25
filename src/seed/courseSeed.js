@@ -7,40 +7,49 @@ async function seedSources() {
         // await sources.deleteMany({});
         await sources.create([
             {
-                name: 'Kiến Thức Nhập Môn IT',
-                description: 'Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.',
-                videoId: 'M62l1xA5Eu8',
-                image: 'https://img.youtube.com/vi/M62l1xA5Eu8/sddefault.jpg',
-                slug: 'lessons-for-newbie'
-            },
-            {
-                name: 'HTML CSS từ Zero đến Hero',
-                description: 'Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.',
-                videoId: 'M62l1xA5Eu8',
-                image: 'https://img.youtube.com/vi/M62l1xA5Eu8/sddefault.jpg',
-                slug: 'html-css'
-            },
-            {
-                name: 'Lập Trình JavaScript Cơ Bản',
-                description: 'Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.',
-                videoId: 'M62l1xA5Eu8',
-                image: 'https://img.youtube.com/vi/M62l1xA5Eu8/sddefault.jpg',
-                slug: 'javascript-co-ban'
-            },
-            {
-                name: 'Lập Trình JavaScript Nâng Cao',
-                description: 'Hiểu sâu hơn về cách Javascript hoạt động, tìm hiểu về IIFE, closure, reference types, this keyword, bind, call, apply, prototype, ...',
-                videoId: 'M62l1xA5Eu8',
-                image: 'https://img.youtube.com/vi/M62l1xA5Eu8/sddefault.jpg',
-                slug: 'javascript-nang-cao'
+                name: "RESIDENT EVIL 2 #1: NGẬP TRÀN XÁC SỐNG !!! BOM TẤN KINH DỊ 2019 ĐÂY RỒI !!!",
+                description: "Đây là game RESIDENT EVIL 2 Remake chơi trên kênh Trực Tiếp Game của tôi - Dũng CT. Rất mong nhận được sự ủng hộ của ae.",
+                videoId: "tpXaQkAbJ_I",
+                slug: 'resident-evil-2-1',
+                level: "Trình độ nâng cao"
             },
             {
                 name: "RESIDENT EVIL 2 #2: 2 TIẾNG VẬT LỘN VỚI CÁC LOÀI QUÁI VẬT KINH KHIẾP NHẤT !!!",
                 description: "Đây là game RESIDENT EVIL 2 Remake chơi trên kênh Trực Tiếp Game của tôi - Dũng CT. Rất mong nhận được sự ủng hộ của ae.",
-                image: "https://img.youtube.com/vi/3BTe0J1oDUo/sddefault.jpg",
                 videoId: "3BTe0J1oDUo",
-                level: "Trình độ nâng cao",
-                slug: 'resident-evil-2'
+                slug: 'resident-evil-2-2',
+                level: "Trình độ nâng cao"
+
+            },
+            {
+                name: "RESIDENT EVIL 2 #3: MỸ NHÂN LỘ DIỆN GIỮA BẦY ZOMBIE !!! Tôi yêu em =)))",
+                description: "Đây là game RESIDENT EVIL 2 Remake chơi trên kênh Trực Tiếp Game của tôi - Dũng CT. Rất mong nhận được sự ủng hộ của ae.",
+                videoId: "C3-UtLqm1bk",
+                slug: 'resident-evil-2-3',
+                level: "Trình độ nâng cao"
+            },
+            {
+                name: "RESIDENT EVIL 2 #4: GIẾT TRÙM CUỐI !!! NGƯỜI ĐẸP CỦA TÔI CHẾT RỒI :(((((",
+                description: "Đây là game RESIDENT EVIL 2 Remake chơi trên kênh Trực Tiếp Game của tôi - Dũng CT. Rất mong nhận được sự ủng hộ của ae.",
+                videoId: "xYnLX5wHoAM",
+                slug: 'resident-evil-2-4',
+                level: "Trình độ nâng cao"
+
+            },
+            {
+                name: "RESIDENT EVIL 2 #5: NỮ CHÍNH CỦA GAME ĐÃ XUẤT HIỆN !!! Đẹp & Ngầu level max !!!",
+                description: "Đây là game RESIDENT EVIL 2 Remake chơi trên kênh Trực Tiếp Game của tôi - Dũng CT. Rất mong nhận được sự ủng hộ của ae.",
+                videoId: "NGRPGOxljcI",
+                slug: 'resident-evil-2-5',
+                level: "Trình độ nâng cao"
+
+            },
+            {
+                name: "RESIDENT EVIL 2 #6: CHÁU HÒA BÌNH XINH QUÁ !!! Chào bố Dũng chưa con =))))",
+                description: "Đây là game RESIDENT EVIL 2 Remake chơi trên kênh Trực Tiếp Game của tôi - Dũng CT. Rất mong nhận được sự ủng hộ của ae.",
+                videoId: "-ORTJlckdAM",
+                slug: 'resident-evil-2-6',
+                level: "Trình độ nâng cao"
             }
             // Add more documents as needed
         ]);

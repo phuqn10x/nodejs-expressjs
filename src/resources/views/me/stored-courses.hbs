@@ -1,0 +1,28 @@
+<div class="container mt-3">
+    <h3>Khóa học của tôi</h3>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên khóa học</th>
+            <th scope="col">Trình độ</th>
+            <th scope="col">Ảnh</th>
+            <th scope="col">Thời gian tạo</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each sources}}
+            <tr>
+                <th scope="row">1</th>
+                <td><a href="/courses/{{this.slug}}">{{this.name}}</a> </td>
+                <td>{{this.level}}</td>
+                <td>
+                    <image src="{{this.image}}"></image>
+                </td>
+                <td>{{this.c}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+

@@ -1,16 +1,16 @@
 
 <div class="container-lg">
 <div class="mt-4">
-    <div class="row">
+    <div class="row ">
         {{#each sources}}
         <div class="col-sm-6 col-lg-4">
 
             <div class="card mt-2">
-                <a href="/courses/{{this.slug}}">
-            <img src="{{this.image}}" class="card-img-top" alt="...">
+                <a  href="/courses/{{this.slug}}">
+            <img src="https://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg" class="card-img-top" alt="...">
                 </a>
             <div class="card-body">
-                <a href="/courses/{{this.slug}}">
+                <a class="text-decoration-none" href="/courses/{{this.slug}}">
                     <h5 class="card-title">{{this.name}}</h5>
                 </a>
                 <p class="card-text">{{this.description}}</p>

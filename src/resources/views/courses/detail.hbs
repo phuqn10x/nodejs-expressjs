@@ -1,20 +1,57 @@
-<div class="container-lg">
-    <div class="mt-4">
-        <div class="row">
+<div class=" bg-dark bg-gradient">
+    <div class="container-xl">
+        <div class="py-1">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="row">
+                        <div class="video-container text-center ">
+                            <iframe width="1235" height="694" src="https://www.youtube.com/embed/{{course.videoId}}"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="text-white pt-3 ">
+                            <div class="title-course">
+                                <h1 class="fw-bold">{{course.name}}</h1>
+                            </div>
+                            <div class="user d-flex py-1">
+                                <a class="align-self-center image" href="#">
+                                    <img src="https://yt3.ggpht.com/ytc/AIf8zZTKs-XP8VQaQdhFgoAnxGFuDKTq2V7ssaVHqIhGOA=s48-c-k-c0x00ffffff-no-rj"
+                                         alt=""
+                                         class="user-avatar">
+                                </a>
+                                <div class="d-flex flex-column detail ">
+                                    <div class="d-flex flex-row">
+                                        <div>
+                                            <a class="text-decoration-none text-white fw-bold" href="#">Trực Tiếp
+                                                Game</a>
+                                        </div>
+                                        <div class="align-self-center ps-1 icons-verified ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                 fill="currentColor"
+                                                 viewBox="0 0 24 24"
+                                                 width="24" focusable="false">
+                                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
+                                            </svg>
+                                        </div>
 
-            <div class="col-sm-3">
-                <img src="{{course.image}}" class="card-img-top" alt="...">
-                <h5 class="card-title py-2">{{course.name}}</h5>
-                <p class="card-text py-2">{{course.description}}</p>
+
+                                    </div>
+
+                                    <span class="text-secondary">1,83 Tr người đăng ký</span>
+                                </div>
+
+
+                            </div>
+
+                            <p class="py-3">{{course.description}}</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
-            <div class="col-sm-9 text-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{course.url}}"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-
-            </div>
-
         </div>
     </div>
 </div>

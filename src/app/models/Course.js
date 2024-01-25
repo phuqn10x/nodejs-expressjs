@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
-
+const slug = require('mongoose-slug-updater')
+mongoose.plugin(slug)
 const Course = mongoose.model("course", new mongoose.Schema({
         name: {type: String, required: true},
         description: {type: String},
