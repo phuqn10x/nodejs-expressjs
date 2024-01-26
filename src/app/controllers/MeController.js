@@ -11,6 +11,14 @@ class MeController {
                 }))
             .catch(next)
     }
+    trashedCourses(req, res, next) {
+        Courses.findDeleted({})
+            .then(sources => res.render('me/trashed-courses',
+                {
+                    sources: multipleMongooseToObject(sources)
+                }))
+            .catch(next)
+    }
 
 }
 
